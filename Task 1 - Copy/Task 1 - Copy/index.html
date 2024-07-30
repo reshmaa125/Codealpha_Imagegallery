@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="light-theme">Light Theme</button>
+        <button id="dark-theme">Dark Theme</button>
+    </div>
+    <div class="gallery">
+        <div class="image-container main-image">
+            <div class="loading-indicator">Loading...</div>
+            <img class="gallery-image" src="image2.jpg" alt="Gallery Image" id="main-image">
+        </div>
+        <div class="thumbnails-container scroll-images">
+            <div class="thumbnails" id="thumbnail-container">
+                <img class="thumbnail scroll-image" src="image2.jpg" data-full="image2.jpg" alt="Image 1">
+                <img class="thumbnail scroll-image" src="image3.jpg" data-full="image3.jpg" alt="Image 2">
+                <img class="thumbnail scroll-image" src="image4.jpg" data-full="image4.jpg" alt="Image 4">
+                <img class="thumbnail scroll-image" src="image5.jpg" data-full="image5.jpg" alt="Image 3">
+                <img class="thumbnail scroll-image" src="image6.jpg" data-full="image7.jpg" alt="Image 5">
+                <img class="thumbnail scroll-image" src="image8.jpg" data-full="image8.jpg" alt="Image 6">
+                <img class="thumbnail scroll-image" src="image9.jpg" data-full="image9.jpg" alt="Image 7">
+                <img class="thumbnail scroll-image" src="image10.jpg" data-full="image10.jpg" alt="Image 8">
+                <img class="thumbnail scroll-image" src="image11.jpg" data-full="image11.jpg" alt="Image 9">
+                <img class="thumbnail scroll-image" src="image3.jpg" data-full="image3.jpg" alt="Image 10">
+            </div>
+        </div>
+        <div class="control-bar">
+            <span id="image-counter">1</span> / <span id="total-images">10</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
